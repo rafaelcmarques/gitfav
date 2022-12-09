@@ -1,4 +1,4 @@
-<h1 align="center"> Timer Focus  </h1>
+<h1 align="center"> GitFav  </h1>
 
 <p align="center">
   <a href="#-tecnologias">Tecnologias</a>&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;
