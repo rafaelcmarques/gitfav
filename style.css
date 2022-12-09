@@ -1,0 +1,168 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+:root {
+  font-size: 62.5%;
+  --bg-color: hsla(196, 73%, 3%, 1);
+  --tt-primary-color: #e1e1e6;
+  --tt-secundary-color: #7c7c8a;
+  --table-color: #092d38;
+  --row-primary-color: rgba(6, 22, 27, 0.5);
+  --row-secundary-color: #06181c;
+  --border-color: #4a808c;
+  --button-background: #065e7c;
+  --remove-button-tt-color: #f75a68;
+}
+
+.sr-only {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  padding: 0;
+  margin: -1px;
+  overflow: hidden;
+  clip: rect(0, 0, 0, 0);
+  border: 0;
+}
+
+body {
+  background: var(--bg-color);
+  color: var(--tt-primary-color);
+  font-size: 1.6rem;
+  font-family: "Roboto", sans-serif;
+}
+
+#app {
+  max-width: 1120px;
+  margin: 0 auto;
+  padding-inline: 2rem;
+}
+
+header {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+
+  margin-top: 11.5rem;
+}
+
+.search {
+  display: flex;
+  align-items: center;
+  gap: 0.8rem;
+}
+header input {
+  padding: 1.6rem;
+  width: clamp(15rem, 20rem + 16vw, 43rem);
+
+  line-height: 1.6rem;
+}
+
+header button {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 0.8rem;
+  padding: 1.2rem 3.2rem;
+
+  border: none;
+  background: var(--button-background);
+  text-transform: uppercase;
+  color: var(--tt-primary-color);
+  font-weight: 700;
+  font-size: 1.4rem;
+  line-height: 2.4rem;
+}
+
+header input,
+button {
+  border-radius: 0.5rem;
+}
+
+table {
+  margin-top: 4.6rem;
+  width: 100%;
+  border-collapse: collapse;
+}
+
+table thead {
+  text-align: left;
+  background: var(--table-color);
+}
+
+table thead th {
+  padding: 1.6rem;
+}
+
+table thead th:nth-child(1) {
+  border-top-left-radius: 1.2rem;
+}
+
+table thead th:nth-child(4) {
+  border-top-right-radius: 1.2rem;
+}
+
+table tr:nth-child(odd) {
+  background: var(--row-primary-color);
+}
+
+table tr:nth-child(even) {
+  background: var(--row-secundary-color);
+}
+
+table img {
+  width: 5.6rem;
+  height: 5.6rem;
+  border-radius: 50%;
+}
+
+table tr {
+  font-size: 1.6rem;
+  font-weight: bold;
+}
+
+table td {
+  padding: 2.4rem 4rem 2.4rem 4rem;
+}
+
+table .user {
+  display: flex;
+  align-items: center;
+  gap: 1.6rem;
+  flex-direction: row;
+}
+
+table a {
+  display: flex;
+  flex-direction: column;
+  gap: 0.8rem;
+  text-decoration: none;
+  color: var(--tt-primary-color);
+}
+
+table a span {
+  font-weight: normal;
+}
+
+table button {
+  background: none;
+  border: none;
+  color: var(--remove-button-tt-color);
+  font-size: 1.6rem;
+  font-weight: bold;
+  cursor: pointer;
+}
+
+@media (max-width: 767px) {
+  header {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 3rem;
+  }
+}
