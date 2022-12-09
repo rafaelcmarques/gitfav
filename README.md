@@ -8,7 +8,7 @@
 <br>
 
 <p align="center">
-  <img alt="git-fav" src="https://flic.kr/p/2o519zB" width="100%">
+  <img alt="git-fav" src="https://live.staticflickr.com/65535/52553836285_5fa33f629a_b.jpg" width="100%">
 </p>
 
 ## 🚀 Tecnologias
